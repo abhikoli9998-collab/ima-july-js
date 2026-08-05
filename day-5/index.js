@@ -39,11 +39,14 @@
 //     this.balance += amount;
 //     console.log(this.balance);
 //   },
+
+
 //   withdraw: function (amount) {
 //     this.balance -= amount;
 //     console.log(this.balance);
 //   }
 // };
+
 // bankAccount.deposit(2000);
 // bankAccount.withdraw(1000);
 
@@ -56,13 +59,19 @@
 //         console.log("Total Price: " + total);
 //     }   
 // }
+
 // shoppingCart.calculateTotal();
+
+
 // const mobile = {
-//   brand: "Samsung",
-//   price: 25000,
-//   color: "Black",
-//   displayInfo: function () {
-//     console.log(this.brand, this.price, this.color);
-// }
+//     brand: "Samsung",
+//     price: 25000,
+//     color: "Black",
+//     displayInfo: function () {
+//         console.log(this.brand, this.price, this.color);
+//         // console.log("Mob borand :", this.brand);
+//         // console.log("Mob price :", this.price);
+//         // console.log("Mob color :", this.color);
+//     }
 // }
 // mobile.displayInfo();
