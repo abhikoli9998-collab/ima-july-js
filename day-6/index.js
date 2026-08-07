@@ -97,10 +97,10 @@ const laptop = {
   RAM: "16 GB",
   price: 1500,
   displayInfo: function() {
-    console.log("Brand :", this.brand);
-    console.log("Processor :", this.processor);
-    console.log("RAM :", this.RAM);
-    console.log("Price :", this.price);
+    console.log(this.brand);
+    console.log(this.processor);
+    console.log(this.RAM);
+    console.log(this.price);
   }
 };
 console.log(laptop.displayInfo());
