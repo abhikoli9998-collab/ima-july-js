@@ -74,39 +74,39 @@
 
 
 // // 6. Car Details
-// // Create an array of car objects (brand, price, fuelType).
-// // Print only the cars:
-// // * whose price is less than ₹10,00,000
-// // * and fuel type is "Petrol".
-// let cars = [
-//     { brand: "Maruti", price: 800000, fuelType: "Petrol" },
-//     { brand: "Hyundai", price: 1200000, fuelType: "Diesel" },
-//     { brand: "Tata", price: 900000, fuelType: "Petrol" }
-// ];
-// for (let i = 0; i < cars.length; i++) {
-//     let car = cars[i];
-//     if (car.price < 1000000 && car.fuelType === "Petrol") {
-//         console.log(car.brand + " : " + car.price);
-//     }
-// }
+// Create an array of car objects (brand, price, fuelType).
+// Print only the cars:
+// * whose price is less than ₹10,00,000
+// * and fuel type is "Petrol".
+let cars = [
+    { brand: "Maruti", price: 800000, fuelType: "Petrol" },
+    { brand: "Hyundai", price: 1200000, fuelType: "Diesel" },
+    { brand: "Tata", price: 900000, fuelType: "Petrol" }
+];
+for (let i = 0; i < cars.length; i++) {
+    let car = cars[i];
+    if (car.price < 1000000 && car.fuelType === "Petrol") {
+        console.log(car.brand + " : " + car.price);
+    }
+}
 
 // 7. Shopping Cart
 // let products = [
-//     { name: "Shirt", price: 1000, quantity: 2 },
-//     { name: "Jeans", price: 2000, quantity: 1 },
-//     { name: "Shoes", price: 4000, quantity: 1 }
-// ];
-// let totalBill = 0;
-// for (let i = 0; i < products.length; i++) {
-//     let product = products[i];
-//     totalBill += product.price * product.quantity;
-// }
-// if (totalBill > 5000) {
-//     console.log("Discount Applied");
-// } else {
-//     console.log("No Discount");
-// }
-// console.log("Total Bill: " + totalBill);
+    { name: "Shirt", price: 1000, quantity: 2 },
+    { name: "Jeans", price: 2000, quantity: 1 },
+    { name: "Shoes", price: 4000, quantity: 1 }
+];
+let totalBill = 0;
+for (let i = 0; i < products.length; i++) {
+    let product = products[i];
+    totalBill += product.price * product.quantity;
+}
+if (totalBill > 5000) {
+    console.log("Discount Applied");
+} else {
+    console.log("No Discount");
+}
+console.log("Total Bill: " + totalBill);
 
 // 8. Voting Eligibility
 // let persons = [
