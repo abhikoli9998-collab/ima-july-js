@@ -1,14 +1,30 @@
+async function getProducts() {
 
-function getData() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve("Data loaded successfully");
-        }, 2000);
-    });
-}
-async function showData() {
-    const result = await getData();
-    console.log(result);
+  const response = await fetch("https://dummyjson.com/products");
+
+  const data = await response.json();
+
+  console.log(data);
+
+  const productsDiv = document.getElementById("products");
+
+  data.products.forEach((product) => {
+
+    productsDiv.innerHTML += `
+      <div class="product">
+
+        <img src="${product.thumbnail}" alt="${product.title}">
+
+        <h2>${product.title}</h2>
+
+        <p>${product.description}</p>
+
+        <h3>$${product.price}</h3>
+
+      </div>
+    `;
+
+  });
 }
 
-showData();
+getProducts();
